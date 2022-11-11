@@ -34,8 +34,8 @@ No modules.
 ## Outputs
 | Name                                                                                                     | Description             |
 | -------------------------------------------------------------------------------------------------------- | ----------------------- |
-| <a name="raw_dataset"></a> [raw\_dataset](#output\_raw\_dataset)                                         | Raw dataset ID          |
-| <a name="raw_dp_dataset"></a> [raw\_dp\_dataset](#output\_raw\_dp\_dataset)                              | Raw dp dataset ID       |
+| <a name="raw_dataset"></a> [raw\_dataset](#output\_raw\_dataset)                                         | raw dataset ID          |
+| <a name="raw_dp_dataset"></a> [raw\_dp\_dataset](#output\_raw\_dp\_dataset)                              | raw dp dataset ID       |
 | <a name="refined_dataset"></a> [refined\_dataset](#output\_refined\_dataset)                             | refined dataset ID      |
 | <a name="data_product_dataset"></a> [data\_product\_dataset](#output\_data\_product\_dataset)            | data_product dataset ID |
 | <a name="data_product_dp_dataset"></a> [data\_product\_dp\_dataset](#output\_data\_product\_dp\_dataset) | refined dataset ID      |
