@@ -1,7 +1,7 @@
+## Optional 
 variable "dataset_name" {
   description = "A unique IDs for datasets"
   type        = set(string)
-  default     = []
 }
 
 variable "location" {
@@ -14,14 +14,19 @@ variable "product_base_name" {
   type        = string
 }
 
+variable "env" {
+  description = "Variable to mark the environment of the resource (used to create services)."
+  type        = string
+}
+
 variable "delete_data" {
   description = "If set to true, delete all tables in the dataset when the resource is destroying "
   type        = bool
   default     = true
 }
 
-variable "env" {
-  description = "Variable to mark the environment of the resource (used to create services)."
-  type        = string
+variable "labels" {
+  description = "The labels associated with this dataset. You can use these to organize and group your datasets"
+  type        = map(string)
+  default     = {}
 }
-

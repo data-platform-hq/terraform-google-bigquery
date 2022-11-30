@@ -26,7 +26,7 @@ No modules.
 ## Inputs
 | Name                                                                                      | Description                                                                      | Type          | Default             | Required |
 | ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ------------- | ------------------- | :------: |
-| <a name="input_dataset_name"></a> [dataset\_name](#input\_dataset\_name)                  | A unique IDs for datasets                                                        | `set(string)` | [ ]                 |   yes    |
+| <a name="input_dataset_name"></a> [dataset\_name](#input\_dataset\_name)                  | A unique IDs for datasets                                                        | `set(string)` | n/a                 |   yes    |
 | <a name="input_product_base_name"></a> [product\_base\_name](#input\_product\_base\_name) | Cloud resources base name (used to create services)                              | `string`      | n/a                 |   yes    |
 | <a name="input_location"></a> [location](#input\_location)                                | The geographic location where the dataset is located (for the main project)      | `string`      | n/a                 |   yes    |
 | <a name="input_env"></a> [env](#input\_env)                                               | Variable to mark the environment of the resource (used to create services)       | `string`      | <pre><br>dev</pre>  |   yes    |
