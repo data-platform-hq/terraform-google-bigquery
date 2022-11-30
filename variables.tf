@@ -1,4 +1,3 @@
-## Optional 
 variable "dataset_name" {
   description = "A unique IDs for datasets"
   type        = set(string)
