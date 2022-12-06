@@ -1,15 +1,15 @@
 variable "dataset_name" {
-  description = "A unique IDs for datasets"
+  description = "Unique names for datasets"
   type        = set(string)
-}
-
-variable "location" {
-  description = "The geographic location where the dataset and bucket be located (for the main GCP project)"
-  type        = string
 }
 
 variable "product_base_name" {
   description = "Cloud resources base name (used to create services)"
+  type        = string
+}
+
+variable "location" {
+  description = "The geographic location where the dataset and bucket be located (for the main GCP project)"
   type        = string
 }
 

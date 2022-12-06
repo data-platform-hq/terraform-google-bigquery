@@ -24,22 +24,19 @@ No modules.
 | [google_bigquery_dataset.main](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/bigquery_dataset) | resource |
 
 ## Inputs
-| Name                                                                                      | Description                                                                      | Type          | Default             | Required |
-| ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ------------- | ------------------- | :------: |
-| <a name="input_dataset_name"></a> [dataset\_name](#input\_dataset\_name)                  | A unique IDs for datasets                                                        | `set(string)` | n/a                 |   yes    |
-| <a name="input_product_base_name"></a> [product\_base\_name](#input\_product\_base\_name) | Cloud resources base name (used to create services)                              | `string`      | n/a                 |   yes    |
-| <a name="input_location"></a> [location](#input\_location)                                | The geographic location where the dataset is located (for the main project)      | `string`      | n/a                 |   yes    |
-| <a name="input_env"></a> [env](#input\_env)                                               | Variable to mark the environment of the resource (used to create services)       | `string`      | <pre><br>dev</pre>  |   yes    |
-| <a name="input_delete_data"></a> [delete\_data](#input\_delete\_data)                     | If set to true, delete all tables in the dataset when the resource is destroying | `bool`        | <pre><br>true</pre> |    no    |
+| Name                                                                                      | Description                                                                                     | Type          | Default             | Required |
+| ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ------------- | ------------------- | :------: |
+| <a name="input_dataset_name"></a> [dataset\_name](#input\_dataset\_name)                  | Unique names for datasets.                                                                      | `set(string)` | n/a                 |   yes    |
+| <a name="input_product_base_name"></a> [product\_base\_name](#input\_product\_base\_name) | Cloud resources base name (used to create services).                                            | `string`      | n/a                 |   yes    |
+| <a name="input_location"></a> [location](#input\_location)                                | The geographic location where the dataset is located (for the main project).                    | `string`      | n/a                 |   yes    |
+| <a name="input_env"></a> [env](#input\_env)                                               | Variable to mark the environment of the resource (used to create services).                     | `string`      | n/a                 |   yes    |
+| <a name="input_delete_data"></a> [delete\_data](#input\_delete\_data)                     | If set to true, delete all tables in the dataset when the resource is destroying.               | `bool`        | <pre><br>true</pre> |    no    |
+| <a name="input_labels"></a> [labels](#input\_labels)                                      | The labels associated with this dataset. You can use these to organize and group your datasets. | `map(string)` | <pre><br>{}</pre>   |    no    |
 
 ## Outputs
-| Name                                                                                                            | Description             |
-| --------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| <a name="output_raw_dataset"></a> [raw\_dataset](#output\_raw\_dataset)                                         | raw dataset ID          |
-| <a name="output_raw_dp_dataset"></a> [raw\_dp\_dataset](#output\_raw\_dp\_dataset)                              | raw dp dataset ID       |
-| <a name="output_refined_dataset"></a> [refined\_dataset](#output\_refined\_dataset)                             | refined dataset ID      |
-| <a name="output_data_product_dataset"></a> [data\_product\_dataset](#output\_data\_product\_dataset)            | data_product dataset ID |
-| <a name="output_data_product_dp_dataset"></a> [data\_product\_dp\_dataset](#output\_data\_product\_dp\_dataset) | refined dataset ID      |
+| Name                                                      | Description           |
+| --------------------------------------------------------- | --------------------- |
+| <a name="output_dataset"></a> [dataset](#output\_dataset) | The ID of the dataset |
 
 <!-- END_TF_DOCS -->
 
