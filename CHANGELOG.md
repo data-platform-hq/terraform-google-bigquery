@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/data-platform-hq/terraform-google-bigquery/compare/v1.0.0...v1.0.1) (2023-08-28)
+
+
+### Bug Fixes
+
+* ge ([7c82c0c](https://github.com/data-platform-hq/terraform-google-bigquery/commit/7c82c0c2430ed4e0a08e8b8067ea136a8cfef8e5))
+* updated version ([ae932eb](https://github.com/data-platform-hq/terraform-google-bigquery/commit/ae932eb3ce204bc7b2ec8d3c12bd1475598b2d6b))
+
 # 1.0.0 (2023-01-19)
 
 
