@@ -27,7 +27,6 @@ locals {
 }
 
 resource "google_bigquery_dataset" "this" {
-
   dataset_id                 = local.bq_dataset_id
   location                   = var.location
   delete_contents_on_destroy = var.delete_data
@@ -37,6 +36,7 @@ resource "google_bigquery_dataset" "this" {
 
 resource "google_bigquery_dataset_access" "this" {
   for_each      = local.acls_mapping
+
   dataset_id    = google_bigquery_dataset.this.dataset_id
   role          = each.value.role
   user_by_email = each.value.entity
