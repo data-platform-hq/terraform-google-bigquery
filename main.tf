@@ -35,8 +35,7 @@ resource "google_bigquery_dataset" "this" {
 }
 
 resource "google_bigquery_dataset_access" "this" {
-  for_each = local.acls_mapping
-
+  for_each      = local.acls_mapping
   dataset_id    = google_bigquery_dataset.this.dataset_id
   role          = each.value.role
   user_by_email = each.value.entity
