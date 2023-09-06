@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/data-platform-hq/terraform-google-bigquery/compare/v1.0.1...v1.1.0) (2023-09-06)
+
+
+### Bug Fixes
+
+* added whitespaces ([ee72127](https://github.com/data-platform-hq/terraform-google-bigquery/commit/ee72127c625f45508f8b4c78cd966fb7a2e5be86))
+* fmt ([0ea38df](https://github.com/data-platform-hq/terraform-google-bigquery/commit/0ea38df6492e6f87acd4c3c0a520924aaee388d6))
+
+
+### Features
+
+* implemented rbac for bigquery datasets ([16c8ab8](https://github.com/data-platform-hq/terraform-google-bigquery/commit/16c8ab875bf073ef7380c15100d898f88d376f63))
+
 ## [1.0.1](https://github.com/data-platform-hq/terraform-google-bigquery/compare/v1.0.0...v1.0.1) (2023-08-28)
 
 
