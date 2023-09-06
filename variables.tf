@@ -1,11 +1,23 @@
-variable "dataset_name" {
-  description = "Unique names for datasets"
-  type        = set(string)
+variable "dataset_config" {
+  description = "Contains BigQuery datasets name, roles, lists of entities (users, service accounts)"
+  type = object({
+    name    = string
+    viewers = optional(list(string))
+    editors = optional(list(string))
+    owners  = optional(list(string))
+  })
 }
 
-variable "product_base_name" {
-  description = "Cloud resources base name (used to create services)"
+variable "prefix" {
+  description = "Prefix for resource names"
   type        = string
+  default     = ""
+}
+
+variable "suffix" {
+  description = "Resource name suffix"
+  type        = string
+  default     = ""
 }
 
 variable "location" {
